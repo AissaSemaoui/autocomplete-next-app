@@ -1,7 +1,7 @@
 import React from "react";
 import Autocomplete from "./Autocomplete/Autocomplete";
 import Link from "next/link";
-import { Location } from "iconsax-react";
+import { Location } from "../assets/loaction";
 
 const Locations = [
   {
@@ -34,13 +34,12 @@ const LocationItem = ({ hit, components }) => {
     >
       <div className="">
         <Location
-          className="text-blue-600 group-hover:text-blue-700"
+          className="fill-blue-800 group-hover:fill-blue-950"
           size="24"
-          variant="Broken"
         />
       </div>
       <div className="flex flex-col justify-center">
-        <h5 className="text-base text-blue-950 group-hover:text-blue-700">
+        <h5 className="text-base text-blue-950 group-hover:text-blue-800">
           <components.Highlight hit={hit} attribute="title" />
         </h5>
         <span className="text-sm text-gray-400">

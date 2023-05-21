@@ -20,9 +20,10 @@ export function Autocomplete(props) {
       container: containerRef.current,
       classNames: {
         form: "!rounded-full !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
-        detachedSearchButton: "!rounded-full !w-full",
+        detachedSearchButton:
+          "!rounded-full !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
         panel: "!rounded-xl",
-        item: "!rounded-md",
+        item: "!rounded-md mb-2",
       },
       renderer: { createElement, Fragment, render: () => {} },
       render({ children }, root) {
