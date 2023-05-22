@@ -1,12 +1,5 @@
-import { Metropolis } from "./fonts";
+import { Metropolis, poppins } from "./fonts";
 import "./globals.css";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "500", "900"],
-  variable: "--font-poppins",
-});
 
 export const metadata = {
   title: "Create Next App",

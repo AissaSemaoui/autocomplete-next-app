@@ -19,9 +19,9 @@ export function Autocomplete(props) {
     const search = autocomplete({
       container: containerRef.current,
       classNames: {
-        form: "!rounded-full shadow !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
+        form: "!rounded-full shadow-md !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
         detachedSearchButton:
-          "!rounded-full shadow !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
+          "!rounded-full shadow-md !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
         panel: "!rounded-xl",
         item: "!rounded-md mb-2",
       },
