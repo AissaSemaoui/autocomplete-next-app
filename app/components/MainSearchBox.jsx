@@ -35,13 +35,10 @@ const LocationItem = ({ hit, components }) => {
   return (
     <Link
       href={hit.link}
-      className="h-full w-full group flex items-center gap-4 px-2"
+      className="h-full w-full group flex items-center gap-4 p-2"
     >
       <div className="">
-        <Location
-          className="fill-blue-800 group-hover:fill-blue-950"
-          size="24"
-        />
+        <Location className="" size="24" />
       </div>
       <div
         className={`flex flex-col justify-center font-metropolis font-medium`}

@@ -23,7 +23,7 @@ export function Autocomplete(props) {
         detachedSearchButton:
           "!rounded-full shadow-md !w-full !px-2 !py-2 !border-none !outline-none focus-within:!shadow-none",
         panel: "!rounded-xl",
-        item: "!rounded-md mb-2",
+        item: "!rounded-md !p-0 mb-2",
       },
       renderer: { createElement, Fragment, render: () => {} },
       render({ children }, root) {
