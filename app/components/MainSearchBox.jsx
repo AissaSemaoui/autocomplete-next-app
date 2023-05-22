@@ -13,29 +13,34 @@ const Locations = [
   {
     title: "Camp Nou Stadium",
     location: "Spain, Barcelona",
+    link: "/hotel-camp-nou",
   },
   {
     title: "Eiffel Tower",
     location: "France, Paris",
+    link: "/hotel-Eiffel",
   },
   {
     title: "Grand Canyon",
     location: "United States, Arizona",
+    link: "/hotel-grand-canyon",
   },
   {
     title: "Great Wall of China",
     location: "China, Beijing",
+    link: "/hotel-wall-china",
   },
   {
     title: "Taj Mahal",
     location: "India, Agra",
+    link: "/hotel-taj-mahal",
   },
 ];
 
 const LocationItem = ({ hit, components }) => {
   return (
     <Link
-      href={hit.location}
+      href={hit.link}
       className="h-full w-full group flex items-center gap-4 px-2"
     >
       <div className="">
@@ -73,6 +78,7 @@ function MainSearchBox({ className }) {
               ).map((item) => ({
                 title: item.title,
                 location: item.location,
+                link: item.link,
               }));
             },
             templates: {
