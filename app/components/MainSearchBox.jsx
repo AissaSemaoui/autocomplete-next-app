@@ -2,12 +2,6 @@ import React from "react";
 import Autocomplete from "./Autocomplete/Autocomplete";
 import Link from "next/link";
 import { Location } from "../assets/loaction";
-import { Nunito_Sans } from "next/font/google";
-
-const NunitoSans = Nunito_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-});
 
 const Locations = [
   {
@@ -50,7 +44,7 @@ const LocationItem = ({ hit, components }) => {
         />
       </div>
       <div
-        className={`flex flex-col justify-center font-normal ${NunitoSans.className}`}
+        className={`flex flex-col justify-center font-metropolis font-medium`}
       >
         <h5 className="text-lg text-blue-950 group-hover:text-blue-800">
           <components.Highlight hit={hit} attribute="title" />
