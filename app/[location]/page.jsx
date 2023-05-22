@@ -2,7 +2,7 @@ import React from "react";
 
 function SearchId({ params }) {
   return (
-    <div className="flex h-screen justify-center items-center">
+    <div className="flex h-screen flex-col justify-center items-center gap-4">
       <h1 className="text-3xl text-gray-800 text-center">
         Here we are {params.location}
       </h1>
