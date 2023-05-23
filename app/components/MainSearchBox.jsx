@@ -37,13 +37,16 @@ const LocationItem = ({ hit, components }) => {
       href={hit.link}
       className="h-full w-full group flex items-center gap-4 p-2"
     >
-      <div className="">
-        <Location className="" size="24" />
+      <div className="pl-2">
+        <Location
+          className="text-blue-900 group-hover:text-blue-700"
+          size="24"
+        />
       </div>
       <div
         className={`flex flex-col justify-center font-metropolis font-medium`}
       >
-        <h5 className="text-lg text-blue-950 group-hover:text-blue-800">
+        <h5 className="text-lg text-blue-950 group-hover:text-blue-700">
           <components.Highlight hit={hit} attribute="title" />
         </h5>
         <span className="text-md text-gray-400">
