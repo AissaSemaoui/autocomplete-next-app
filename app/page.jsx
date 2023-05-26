@@ -35,8 +35,8 @@ export default function Home() {
         target="_blank"
         className="w-max p-1 m-2 text-center rounded-md bg-white shadow-md hover:shadow active:shadow-none cursor-pointer"
       >
-        <Linktree className="h-8 w-8 mx-auto" />
-        <h4 className="text-xs">Linktree</h4>
+        <Linktree className="w-6 md:h-8 h-6 md:w-8 mx-auto" />
+        <h4 className="hidden md:block text-xs">Linktree</h4>
       </a>
     </main>
   );
