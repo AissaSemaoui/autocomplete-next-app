@@ -62,8 +62,8 @@ function MainSearchBox({ className }) {
     <div className={className}>
       <Autocomplete
         className="h-full"
-        openOnFocus={true}
-        // autoFocus={true}
+        // openOnFocus={true}
+        autoFocus={true}
         getSources={({ query }) => [
           {
             sourceId: "Locations",
