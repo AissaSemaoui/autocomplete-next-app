@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import MainSearchBox from "./components/MainSearchBox";
-import { Linktree } from "./assets/linktree";
+import { Linktree } from "./assets/icons/linktree";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col">
+    <main className="h-[100vmin] flex flex-col">
       <div className="p-8">
         <Image
           src="./next.svg"

@@ -1,7 +1,8 @@
 import React from "react";
 import Autocomplete from "./Autocomplete/Autocomplete";
 import Link from "next/link";
-import { Location } from "../assets/loaction";
+import { Location } from "../assets/icons/loaction";
+import { ArrowUpLeft } from "../assets/icons/arrow-up-left";
 
 const Locations = [
   {
@@ -44,7 +45,7 @@ const LocationItem = ({ hit, components }) => {
         />
       </div>
       <div
-        className={`flex flex-col justify-center font-metropolis font-medium`}
+        className={`flex-1 flex flex-col justify-center font-metropolis font-medium`}
       >
         <h5 className="text-lg text-blue-950 group-hover:text-blue-700">
           <components.Highlight hit={hit} attribute="title" />
@@ -52,6 +53,9 @@ const LocationItem = ({ hit, components }) => {
         <span className="text-md text-gray-400">
           <components.Highlight hit={hit} attribute="location" />
         </span>
+      </div>
+      <div>
+        <ArrowUpLeft className="text-gray-400" />
       </div>
     </Link>
   );
