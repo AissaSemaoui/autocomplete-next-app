@@ -36,7 +36,7 @@ export default function Home() {
       <a
         href="https://linktr.ee/"
         target="_blank"
-        className="w-max p-1 m-2 max-sm:mb-28 text-center rounded-md bg-white shadow-md hover:shadow active:shadow-none cursor-pointer"
+        className="w-max p-1 mx-2 fixed left-0 -translate-y-[150%] top-full text-center rounded-md bg-white shadow-md hover:shadow active:shadow-none cursor-pointer"
       >
         <Linktree className="w-6 md:h-8 h-6 md:w-8 mx-auto" />
         <h4 className="hidden md:block text-xs">Linktree</h4>
