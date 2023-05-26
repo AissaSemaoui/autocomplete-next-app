@@ -86,7 +86,7 @@ function MainSearchBox({ className }) {
               },
               noResults: ({ state }) => (
                 <h1 className="text-blue-950">
-                  No results for "<strong>{state.query}</strong>"
+                  No results for &quot;<strong>{state.query}</strong>&quot;
                 </h1>
               ),
             },
