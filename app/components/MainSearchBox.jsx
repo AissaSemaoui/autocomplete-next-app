@@ -63,7 +63,7 @@ function MainSearchBox({ className }) {
       <Autocomplete
         className="h-full"
         openOnFocus={true}
-        autoFocus={true}
+        // autoFocus={true}
         getSources={({ query }) => [
           {
             sourceId: "Locations",

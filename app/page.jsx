@@ -25,7 +25,7 @@ export default function Home() {
             Best for you.
           </h1>
         </div>
-        <MainSearchBox className=" w-full max-w-2xl" />
+        <MainSearchBox className=" w-full max-w-2xl mb-2" />
         <Link href="learn-more" className="text-xs hover:underline text-white">
           learn more
         </Link>
