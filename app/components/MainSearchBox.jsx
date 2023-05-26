@@ -84,6 +84,11 @@ function MainSearchBox({ className }) {
               item({ item, components }) {
                 return <LocationItem hit={item} components={components} />;
               },
+              noResults: ({ state }) => (
+                <h1 className="text-blue-950">
+                  No results for "<strong>{state.query}</strong>"
+                </h1>
+              ),
             },
           },
         ]}

@@ -36,9 +36,7 @@ export function Autocomplete(props) {
 
         panelRootRef.current.render(children);
       },
-      renderNoResults({ state, render }, root) {
-        render(`No results for "${state.query}".`, root);
-      },
+
       ...props,
     });
 
