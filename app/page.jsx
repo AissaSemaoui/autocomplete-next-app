@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import MainSearchBox from "./components/MainSearchBox";
+import { Linktree } from "./assets/linktree";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="h-screen flex flex-col">
       <div className="p-8">
         <Image
           src="./next.svg"
@@ -14,7 +16,7 @@ export default function Home() {
           className="object-contain w-16 md:w-24"
         ></Image>
       </div>
-      <div className="flex w-full h-full flex-col justify-center items-center gap-2 mx-auto p-4 md:py-12 lg:py-24 bg-gradient mt-[10vh]">
+      <div className="flex flex-1 w-full h-full flex-col  items-center gap-2 mx-auto p-4 md:py-12 lg:py-24 bg-gradient mt-[10vh]">
         <div className="max-w-3xl w-full">
           <h1 className="text-2xl text-center sm:text-3xl md:text-4xl text-white font-[900] font-poppins mb-2">
             Good for us. Better for accommodations.
@@ -24,7 +26,18 @@ export default function Home() {
           </h1>
         </div>
         <MainSearchBox className=" w-full max-w-2xl" />
+        <Link href="learn-more" className="text-xs hover:underline text-white">
+          learn more
+        </Link>
       </div>
+      <a
+        href="https://linktr.ee/"
+        target="_blank"
+        className="w-max p-1 m-2 text-center rounded-md bg-white shadow-md hover:shadow active:shadow-none cursor-pointer"
+      >
+        <Linktree className="h-8 w-8 mx-auto" />
+        <h4 className="text-xs">Linktree</h4>
+      </a>
     </main>
   );
 }
