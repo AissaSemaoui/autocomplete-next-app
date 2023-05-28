@@ -8,13 +8,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="h-screen flex flex-col">
-      <div className="p-8">
+      <div className="p-4 md:p-8 flex justify-between">
         <Image
           src="./next.svg"
           height={0}
           width={0}
           className="object-contain w-16 md:w-24"
-        ></Image>
+        />
+        <button className="px-8 py-2 ml-4 rounded-full bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 active:scale-[98%] border-none text-white">
+          Accommodation owner
+        </button>
       </div>
       <div className="flex flex-1 w-full h-full flex-col  items-center gap-2 mx-auto p-4 md:py-12 lg:py-24 bg-gradient mt-[10vh]">
         <div className="max-w-3xl w-full">

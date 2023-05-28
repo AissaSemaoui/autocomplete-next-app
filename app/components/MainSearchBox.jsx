@@ -67,6 +67,7 @@ function MainSearchBox({ className }) {
       <Autocomplete
         className="h-full"
         // openOnFocus={true}
+        placeholder="Search your accommodation..."
         autoFocus={true}
         getSources={({ query }) => [
           {
