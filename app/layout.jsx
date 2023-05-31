@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        suppressHydrationWarning={true}
         className={`${poppins.variable} ${Metropolis.variable} font-poppins`}
       >
         {children}
