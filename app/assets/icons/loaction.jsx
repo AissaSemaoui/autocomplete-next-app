@@ -1,7 +1,7 @@
 export const Location = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="icon icon-tabler icon-tabler-zzz"
+    className="icon icon-tabler icon-tabler-zzz"
     width="24"
     height="24"
     viewBox="0 0 24 24"

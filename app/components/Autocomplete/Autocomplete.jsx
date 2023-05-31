@@ -4,7 +4,7 @@ import { autocomplete } from "@algolia/autocomplete-js";
 import React, { createElement, Fragment, useEffect, useRef } from "react";
 import { createRoot } from "react-dom/client";
 
-import "./algolia.scss";
+import "./algolia.css";
 
 export function Autocomplete(props) {
   const containerRef = useRef(null);
