@@ -13,6 +13,7 @@ export default function Home() {
           src="./next.svg"
           height={0}
           width={0}
+          alt="logo"
           className="object-contain w-16 md:w-24"
         />
         <button className="px-4 py-1 ml-4 rounded-full text-sm text-white bg-transparent hover:bg-white/5 active:bg-white/10 active:scale-[98%] border border-solid border-white">
