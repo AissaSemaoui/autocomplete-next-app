@@ -15,7 +15,7 @@ export default function Home() {
           width={0}
           className="object-contain w-16 md:w-24"
         />
-        <button className="px-4 py-1 ml-4 rounded-full text-sm text-white bg-green-500 hover:bg-green-600 active:bg-green-800 active:scale-[98%] border border-solid border-green-300">
+        <button className="px-4 py-1 ml-4 rounded-full text-sm text-white bg-transparent hover:bg-white/5 active:bg-white/10 active:scale-[98%] border border-solid border-white">
           Accommodation owner
         </button>
       </div>
