@@ -3,11 +3,17 @@
 import Image from "next/image";
 import MainSearchBox from "./components/MainSearchBox";
 import { Linktree } from "./assets/icons/linktree";
-import Link from "next/link";
+import Modal from "./components/ui/Modal";
+import { useState } from "react";
 
 export default function Home() {
+  const [isLearnMoreOpen, setLearnMoreOpen] = useState(false);
+
+  const openLearnMoreModal = () => setLearnMoreOpen(true);
+  const closeLearnMoreModal = () => setLearnMoreOpen(false);
+
   return (
-    <main className="h-screen flex flex-col">
+    <main className="home_page h-screen flex flex-col">
       <div className="p-4 md:p-8 flex justify-between">
         <Image
           src="./next.svg"
@@ -30,12 +36,18 @@ export default function Home() {
           </h1>
         </div>
         <MainSearchBox className="w-full max-w-2xl" />
-        <Link
-          href="learn-more"
+        <button
+          onClick={openLearnMoreModal}
           className="text-xs hover:underline text-white mt-2"
         >
           learn more
-        </Link>
+        </button>
+        <Modal
+          isOpen={isLearnMoreOpen}
+          closeModal={closeLearnMoreModal}
+          title="learn more details"
+          description="this is the short learn more description please feel free to change the content"
+        />
       </div>
       <a
         href="https://linktr.ee/"

@@ -9,6 +9,9 @@
 }
 
 body {
-  background: linear-gradient(rgb(0, 183, 18), rgb(114, 217, 34));
   min-height: 100vh;
+}
+
+.home_page {
+  background: linear-gradient(rgb(0, 183, 18), rgb(114, 217, 34));
 }
