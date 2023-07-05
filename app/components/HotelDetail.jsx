@@ -1,3 +1,4 @@
+import { ArrowRight } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -37,9 +38,13 @@ function HotelDetail({
             <Link
               key={label}
               href={link}
-              className="block mb-2 text-white text-2xl bg-green-600 hover:bg-green-700 active:bg-green-800 w-full py-3 rounded-full duration-75 shadow-sm"
+              className="group relative block gap-4 mb-2 text-white text-2xl bg-green-600 hover:bg-green-700 active:bg-green-800 w-full py-3 rounded-full duration-75 shadow-sm active:scale-[0.99]"
             >
               {label}
+              <ArrowRight
+                size={28}
+                className="absolute -translate-y-1/2 top-1/2 right-10 invisible group-hover:right-8 group-hover:visible duration-100 ease-out"
+              />
             </Link>
           ))}
         </div>
@@ -52,9 +57,13 @@ function HotelDetail({
             <Link
               key={label}
               href={link}
-              className="block mb-2 text-white text-2xl bg-green-600 hover:bg-green-700 active:bg-green-800 w-full py-3 rounded-full duration-75 shadow-sm"
+              className="group relative block mb-2 text-white text-2xl bg-green-600 hover:bg-green-700 active:bg-green-800 w-full py-3 rounded-full duration-75 shadow-sm"
             >
               {label}
+              <ArrowRight
+                size={28}
+                className="absolute -translate-y-1/2 top-1/2 right-10 invisible group-hover:right-8 group-hover:visible duration-100 ease-out"
+              />
             </Link>
           ))}
         </div>
