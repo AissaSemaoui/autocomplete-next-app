@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 
 import "./algolia.css";
 
-export function Autocomplete(props) {
+export function Autocomplete({ setSearchAPI, ...rest }) {
   const containerRef = useRef(null);
   const panelRootRef = useRef(null);
   const rootRef = useRef(null);
@@ -37,13 +37,15 @@ export function Autocomplete(props) {
         panelRootRef.current.render(children);
       },
 
-      ...props,
+      ...rest,
     });
+
+    if (setSearchAPI) setSearchAPI(search);
 
     return () => {
       search.destroy();
     };
-  }, [props]);
+  }, [rest]);
 
   return <div ref={containerRef} />;
 }

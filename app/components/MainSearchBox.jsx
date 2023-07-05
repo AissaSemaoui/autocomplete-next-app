@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Autocomplete from "./Autocomplete/Autocomplete";
 import LocationItem from "./LocationItem";
 
@@ -30,12 +30,12 @@ const Locations = [
   },
 ];
 
-function MainSearchBox({ className }) {
+function MainSearchBox({ className, setSearchAPI, options = {} }) {
   return (
     <div className={className}>
       <Autocomplete
         className="h-full"
-        // openOnFocus={true}
+        setSearchAPI={setSearchAPI}
         placeholder="Search your accommodation..."
         autoFocus={true}
         getSources={({ query }) => [
@@ -62,9 +62,10 @@ function MainSearchBox({ className }) {
             },
           },
         ]}
+        {...options}
       />
     </div>
   );
 }
 
-export default MainSearchBox;
+export default React.memo(MainSearchBox);
