@@ -19,8 +19,12 @@ const LocationDetailNav = () => {
 
   return (
     <>
-      <MainSearchBox options={options.current} setSearchAPI={setSearchAPI} />
-      <div className="flex justify-between w-full pt-6 px-6">
+      <MainSearchBox
+        className="searchbox--detached"
+        options={options.current}
+        setSearchAPI={setSearchAPI}
+      />
+      <div className="flex justify-between w-full mb-2 pt-6 px-2 md:px-6">
         <Link
           href="/"
           className="flex items-center gap-2 p-2 hover:outline outline-1 outline-gray-300 active:outline-gray-400 rounded-full duration-75"
@@ -32,7 +36,7 @@ const LocationDetailNav = () => {
           onClick={openDetachedSearch}
           className="flex items-center gap-2 p-2 hover:outline outline-1 outline-gray-300 active:outline-gray-400 rounded-full duration-75"
         >
-          Search <SearchNormal1 />
+          <SearchNormal1 />
         </button>
       </div>
     </>
