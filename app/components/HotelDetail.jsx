@@ -25,7 +25,9 @@ function HotelDetail({
             alt="Accommodation Image"
           />
         </div>
-        <h1 className="text-xl md:text-2xl font-semibold mb-2">{name}</h1>
+        <h1 className="text-xl md:text-2xl font-semibold mb-2">
+          @{name.replace("-", " ").toUpperCase()}
+        </h1>
         <p className="text-base sm:text-lg md:text-xl">{address}</p>
         <a
           href={website}
