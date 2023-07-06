@@ -28,7 +28,9 @@ function HotelDetail({
         <h1 className="text-xl md:text-2xl font-semibold mb-2">
           @{name.replace("-", " ").toUpperCase()}
         </h1>
-        <p className="text-base sm:text-lg md:text-xl">{address}</p>
+        <p className="text-gray-700 text-base sm:text-lg md:text-xl">
+          {address}
+        </p>
         <a
           href={website}
           className="text-blue-900 hover:text-blue-800 hover:underline text-base sm:text-lg"
