@@ -38,7 +38,7 @@ function HotelDetail({
             <Link
               key={label}
               href={link}
-              className="group relative block gap-4 mb-2 text-white text-2xl bg-green-600 hover:bg-green-700 active:bg-green-800 w-full py-3 rounded-full duration-75 shadow-sm active:scale-[0.99]"
+              className="group relative block gap-4 mb-2 text-white text-2xl bg-green-600 hover:outline outline-1 outline-green-700 hover:bg-transparent hover:text-green-900 active:bg-green-800 active:text-white w-full py-3 rounded-full duration-75 shadow-sm active:scale-[0.99]"
             >
               {label}
               <ArrowRight
