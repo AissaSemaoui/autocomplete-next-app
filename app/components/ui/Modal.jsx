@@ -1,7 +1,7 @@
 "use client";
 
+import { Close } from "@/app/assets/icons/close";
 import { Dialog, Transition } from "@headlessui/react";
-import { CloseCircle } from "iconsax-react";
 import { Fragment } from "react";
 
 export default function Modal({ isOpen, closeModal, title, description }) {
@@ -34,11 +34,11 @@ export default function Modal({ isOpen, closeModal, title, description }) {
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 pt-2 text-left align-middle shadow-xl transition-all">
                   <div className="mt-4">
-                    <CloseCircle
+                    <Close
                       size={32}
                       className="ml-auto mb-2 rounded-md border border-transparent text-sm font-medium hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 cursor-pointer"
                       onClick={closeModal}
-                    ></CloseCircle>
+                    ></Close>
                   </div>
                   <Dialog.Title
                     as="h3"
