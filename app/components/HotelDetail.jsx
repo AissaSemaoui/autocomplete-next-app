@@ -13,7 +13,7 @@ function HotelDetail({
   promotions = [],
 }) {
   return (
-    <div className="text-center max-w-xl p-2 mb-8">
+    <div className="text-center max-w-xl p-3 mb-8">
       <div>
         <div className="h-52 w-52 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
           <Image
