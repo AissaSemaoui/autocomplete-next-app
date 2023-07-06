@@ -26,10 +26,10 @@ function HotelDetail({
           />
         </div>
         <h1 className="text-xl md:text-2xl font-semibold mb-2">{name}</h1>
-        <p className="text-lg md:text-xl">{address}</p>
+        <p className="text-base sm:text-lg md:text-xl">{address}</p>
         <a
           href={website}
-          className="text-blue-900 hover:text-blue-800 hover:underline text-lg"
+          className="text-blue-900 hover:text-blue-800 hover:underline text-base sm:text-lg"
         >
           {website}
         </a>
@@ -39,36 +39,16 @@ function HotelDetail({
         <div className="mt-6">
           <h2 className="text-xl md:text-2xl font-medium mb-3">Today</h2>
           {today.map(({ label, link }) => (
-            <Anchor
-              key={label}
-              label={label}
-              link={link}
-              rightIcon={
-                <ArrowRight
-                  size={28}
-                  className="absolute -translate-y-1/2 top-1/2 right-10 invisible group-hover:right-8 group-hover:visible duration-100 ease-out"
-                />
-              }
-            />
+            <Anchor key={label} label={label} link={link} />
           ))}
         </div>
       )}
 
       {promotions.length > 0 && (
         <div className="mt-8">
-          <h2 className="text-2xl font-medium mb-3">Promotions</h2>
+          <h2 className="text-xl md:text-2xl font-medium mb-3">Promotions</h2>
           {promotions.map(({ label, link }) => (
-            <Anchor
-              key={label}
-              label={label}
-              link={link}
-              rightIcon={
-                <ArrowRight
-                  size={28}
-                  className="absolute -translate-y-1/2 top-1/2 right-10 invisible group-hover:right-8 group-hover:visible duration-100 ease-out"
-                />
-              }
-            />
+            <Anchor key={label} label={label} link={link} />
           ))}
         </div>
       )}
