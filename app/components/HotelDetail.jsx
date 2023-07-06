@@ -47,7 +47,7 @@ function HotelDetail({
       )}
 
       {promotions.length > 0 && (
-        <div className="mt-8">
+        <div className="mt-6">
           <h2 className="text-xl md:text-2xl font-medium mb-3">Promotions</h2>
           {promotions.map(({ label, link }) => (
             <Anchor key={label} label={label} link={link} />
