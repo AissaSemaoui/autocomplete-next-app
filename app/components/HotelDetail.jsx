@@ -33,7 +33,7 @@ function HotelDetail({
         </p>
         <a
           href={website}
-          className="text-blue-700 hover:text-blue-600 hover:underline text-base sm:text-lg"
+          className="text-blue-700 hover:text-blue-600 hover:underline text-sm sm:text-base md:text-lg"
         >
           {website}
         </a>
