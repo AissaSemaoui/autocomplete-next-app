@@ -15,7 +15,7 @@ function HotelDetail({
   return (
     <div className="text-center max-w-xl p-3 mb-8">
       <div>
-        <div className="h-52 w-52 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
+        <div className="h-44 w-44 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
           <Image
             src={img}
             width={0}
@@ -25,15 +25,15 @@ function HotelDetail({
             alt="Accommodation Image"
           />
         </div>
-        <h1 className="text-xl md:text-2xl font-semibold mb-2">
+        <h1 className="text-base md:text-lg font-semibold mb-2">
           @{name.replace("-", " ").toUpperCase()}
         </h1>
-        <p className="text-gray-800 text-base sm:text-lg md:text-xl">
+        <p className="text-gray-800 text-sm sm:text-base md:text-lg">
           {address}
         </p>
         <a
           href={website}
-          className="text-blue-700 hover:text-blue-600 hover:underline text-sm sm:text-base md:text-lg"
+          className="text-blue-900 hover:text-blue-800 hover:underline text-sm sm:text-base md:text-lg"
         >
           {website}
         </a>
