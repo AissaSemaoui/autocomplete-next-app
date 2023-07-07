@@ -24,7 +24,7 @@ const LocationDetailNav = () => {
         options={options.current}
         setSearchAPI={setSearchAPI}
       />
-      <div className="flex justify-between w-full mb-6 pt-2 sm:pt-4 px-3 md:px-6">
+      <div className="flex justify-between text-xs md:text-base w-full mb-6 pt-2 sm:pt-4 px-3 md:px-6">
         <Link
           href="/"
           className="flex items-center gap-2 p-2 hover:outline outline-1 outline-gray-300 active:outline-gray-400 rounded-full duration-75"

@@ -41,7 +41,7 @@ function HotelDetail({
 
       {today.length > 0 && (
         <div className="mt-6">
-          <h2 className="text-xl md:text-2xl font-medium mb-3">Today</h2>
+          <h2 className="text-lg md:text-xl font-medium mb-3">Today</h2>
           {today.map(({ label, link }) => (
             <Anchor key={label} label={label} link={link} />
           ))}
@@ -50,7 +50,7 @@ function HotelDetail({
 
       {promotions.length > 0 && (
         <div className="mt-6">
-          <h2 className="text-xl md:text-2xl font-medium mb-3">Promotions</h2>
+          <h2 className="text-lg md:text-xl font-medium mb-3">Promotions</h2>
           {promotions.map(({ label, link }) => (
             <Anchor key={label} label={label} link={link} />
           ))}
