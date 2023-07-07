@@ -25,7 +25,7 @@ function HotelDetail({
             alt="Accommodation Image"
           />
         </div>
-        <h1 className="text-base md:text-lg font-semibold mb-2">
+        <h1 className="text-base md:text-lg font-medium mb-2">
           @{name.replace("-", " ").toUpperCase()}
         </h1>
         <p className="text-gray-800 text-sm sm:text-base md:text-lg">
