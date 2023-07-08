@@ -15,7 +15,7 @@ function HotelDetail({
   return (
     <div className="text-center max-w-xl p-3 mb-8">
       <div>
-        <div className="h-44 w-44 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
+        <div className="h-36 w-36 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
           <Image
             src={img}
             width={0}

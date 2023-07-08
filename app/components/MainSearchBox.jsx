@@ -42,6 +42,8 @@ function MainSearchBox({ className, setSearchAPI, options = {} }) {
           {
             sourceId: "Locations",
             getItems() {
+              if (query === "") return [];
+
               return Locations.filter((item) =>
                 item.title.toLowerCase().includes(query.toLowerCase())
               ).map((item) => ({
@@ -54,11 +56,15 @@ function MainSearchBox({ className, setSearchAPI, options = {} }) {
               item({ item, components }) {
                 return <LocationItem hit={item} components={components} />;
               },
-              noResults: ({ state }) => (
-                <h1 className="text-blue-950">
-                  No results for &quot;<strong>{state.query}</strong>&quot;
-                </h1>
-              ),
+              noResults: ({ state }) => {
+                if (state.query.length < 1) return;
+
+                return (
+                  <h1 className="text-blue-950">
+                    No results for &quot;<strong>{state.query}</strong>&quot;
+                  </h1>
+                );
+              },
             },
           },
         ]}
