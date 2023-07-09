@@ -13,9 +13,9 @@ function HotelDetail({
   promotions = [],
 }) {
   return (
-    <div className="text-center w-[500px] max-w-2xl p-3 mb-8">
+    <div className="text-center w-[672px] max-w-2xl p-3 mb-8">
       <div>
-        <div className="h-36 w-36 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
+        <div className="h-28 w-28 mb-6 mx-auto rounded-full overflow-hidden border border-gray-600 shadow-lg">
           <Image
             src={img}
             width={0}
